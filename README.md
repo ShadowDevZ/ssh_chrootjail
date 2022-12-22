@@ -11,7 +11,7 @@ After the configuration restart the ssh server on systemd by typing `sudo system
 
 This allow user guest to be run only in the chroot environment
 Additionally it is possible to allow the sftp command by changing Subsystem to
-`Subsystem sftp internal-sftp` \
+`Subsystem sftp internal-sftp` 
 
 ## Configuration
 `CFG_USERNAME` Name of the user that will be locked in the chroot environment
@@ -32,7 +32,7 @@ run the `addtojail.sh` script. The first argument is the path to the jail direct
 
 
 ## Uninstallation
-Remove the chroot directory eg. `sudo rm -rf /jail` \
-Delete the user and his home directory `sudo userdel guest \
+Remove the chroot directory eg. `sudo rm -rf /jail` 
+Delete the user and his home directory `sudo userdel guest 
 Optionally the guests home directory can be removed. Make sure to backup all important files and run
 `sudo rm -rf /home/guest` 
