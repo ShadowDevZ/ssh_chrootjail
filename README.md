@@ -5,10 +5,11 @@ Warning: After launching the script do not forget to edit your sshd config file
 to add the ChrootDirectory option
 
 
-Example: 
-`Match User guest \ 
+### Example: 
+
+Match User guest \ 
 Chroot Directory /jail/guest/ \ 
-Match all`
+Match all
 
 
 After the configuration restart the ssh server on systemd by typing `sudo systemctl restart sshd`
