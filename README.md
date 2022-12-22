@@ -13,8 +13,6 @@ to add the ChrootDirectory option
  
  \
 &nbsp;
-\
-&nbsp;
 
 After the configuration restart the ssh server on systemd by typing `sudo systemctl restart sshd`
 
@@ -23,6 +21,8 @@ Additionally it is possible to allow the sftp command by changing Subsystem to
 `Subsystem sftp internal-sftp` 
 
 ## Configuration
+ \
+ &nbsp;
 `CFG_USERNAME` Name of the user that will be locked in the chroot environment \
  \
  &nbsp;
