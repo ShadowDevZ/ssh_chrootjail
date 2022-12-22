@@ -36,3 +36,6 @@ Remove the chroot directory eg. `sudo rm -rf /jail`
 Delete the user and his home directory `sudo userdel guest 
 Optionally the guests home directory can be removed. Make sure to backup all important files and run
 `sudo rm -rf /home/guest` 
+
+## Tested platform
+Arch Linux: linux-6.0.12-zen1-1-zen, Openssh 9
