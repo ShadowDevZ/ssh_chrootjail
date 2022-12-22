@@ -27,9 +27,17 @@ Additionally it is possible to allow the sftp command by changing Subsystem to
  \
  &nbsp;
 `CFG_USERSHELL` A default shell that the user can access in chroot (need to specify full path) \
+ \
+ &nbsp;
 `CFG_JAILDIR` A directory where user will be chrooted \
+ \
+ &nbsp;
 `CFG_HOME_PERMISSION` Access to the chroot directory (default 700, only the created user can access the directory) \
+ \
+ &nbsp;
 `CFG_DEFAULT_PROGS` A list of programs separated by a whitespace that the user can access. To add more programs please refer to the addtojail.sh documentation
+ \
+ &nbsp;
 
 
 ## Adding programs to the jail
