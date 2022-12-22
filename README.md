@@ -3,15 +3,15 @@
 Sets up ssh jail automatically. 
 Warning: After launching the script do not forget to edit your sshd config file
 to add the ChrootDirectory option
-Example:
-`Match User guest
-Chroot Directory /jail/guest/
-Match all`
+Example: \
+`Match User guest \
+Chroot Directory /jail/guest/ \
+Match all` \
 After the configuration restart the ssh server on systemd by typing `sudo systemctl restart sshd`
 
 This allow user guest to be run only in the chroot environment
 Additionally it is possible to allow the sftp command by changing Subsystem to
-`Subsystem sftp internal-sftp`
+`Subsystem sftp internal-sftp` \
 
 ## Configuration
 `CFG_USERNAME` Name of the user that will be locked in the chroot environment
@@ -26,13 +26,13 @@ run the `addtojail.sh` script. The first argument is the path to the jail direct
 
 
 ## Installation (Linux)
-cd path_to_the_folder
-`chmod +x sshjail_setup.sh`
-`chmod +x addtojail.sh`
+`cd path_to_the_folder` \
+`chmod +x sshjail_setup.sh` \
+`chmod +x addtojail.sh` \
 
 
 ## Uninstallation
-Remove the chroot directory eg. `sudo rm -rf /jail`
-Delete the user and his home directory `sudo userdel guest
+Remove the chroot directory eg. `sudo rm -rf /jail` \
+Delete the user and his home directory `sudo userdel guest \
 Optionally the guests home directory can be removed. Make sure to backup all important files and run
-`sudo rm -rf /home/guest`
+`sudo rm -rf /home/guest` \
