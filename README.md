@@ -7,9 +7,9 @@ to add the ChrootDirectory option
 
 ### Example: 
 
-<p>Match User guest<br> 
-<p>Chroot Directory /jail/guest/<br> 
-<p>Match all<br>
+<p>`Match User guest`<br> 
+<p>`Chroot Directory /jail/guest/`<br> 
+<p>`Match all`<br>
 
 After the configuration restart the ssh server on systemd by typing `sudo systemctl restart sshd`
 
