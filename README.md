@@ -7,8 +7,8 @@ to add the ChrootDirectory option
 
 ### Example: 
 
-Match User guest \ 
-Chroot Directory /jail/guest/ \ 
+Match User guest\ 
+Chroot Directory /jail/guest/\ 
 Match all
 
 
